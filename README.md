@@ -47,8 +47,8 @@ We will initially examine the server's DNS A-Records. Hostname to IP address map
 
 <p>
 As soon as we switch the record address of "mainframe" to 8.8.8.8, the client machine will continue to ping the previous address even if we changed it. Why? Because we need to flsuh the dns before it can show the new IP Address, to do so use the command ipconfig /flushdns which will flush the DNS. The DNS cache will be cleared, and the new record's address will appear when we try to ping the mainframe again.
+  
 </p>
-
 <p>
 <img src="https://i.imgur.com/tIgsNxy.png" height="80%" width="80%" alt="Changing mainframe IP Address"/>
 </p>
@@ -57,14 +57,25 @@ As soon as we switch the record address of "mainframe" to 8.8.8.8, the client ma
 
 <p>
 Last but not least, we'll set up a CNAME record to direct the host "search" to "www.google.com." Ping won't be able to locate the host if we use the "search" option. To construct the CNAME record "search," we must return to the DNS tool on DC-1. When we ping "search" after creating the CNAME record, it resolves to www.google.com.
+  
 </p>
-
 <p>
+<img src="https://i.imgur.com/P0i6zi7.png" height="80%" width="80%" alt="Creating a CNAME  
 <img src="https://i.imgur.com/fDJl47K.png" height="80%" width="80%" alt="Creating a CNAME"/>
 </p>
+<p>
+<img src="https://i.imgur.com/KEdUGck.png" height="80%" width="80%" alt="search CNAME record 
+<p>  
+
+
 <p>
 <img src="https://i.imgur.com/KEdUGck.png" height="80%" width="80%" alt="search CNAME record"/>
 </p>
 <p>
 <img src="https://i.imgur.com/oQe0ZI0.png" height="80%" width="80%" alt="Ping search"/>
 </p>
+
+
+
+
+  
