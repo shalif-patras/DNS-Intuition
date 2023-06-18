@@ -4,7 +4,7 @@
 </p>
 
 <h1>Building Intuition for DNS</h1>
-This lab will help us understand the use of DNS and give a good knowledge about DNS.<br />
+This lab will help us understand the use of DNS and give a good knowledge about DNS functionality.<br />
 
 <h2>Environments and Technologies Used</h2>
 
